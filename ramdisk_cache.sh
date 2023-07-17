@@ -10,3 +10,5 @@
 declare -A ramdisks=(
 #	["test"]="mounted persistent" # mkdir mounted persistent; touch persistent/test
 	["cache"]="/var/cache /mnt/persistent/system"
+["log"]="/var/log /mnt/persistent/log"
+	["usercache"]="/home/sid/.cache /mnt/persistent/home"
