@@ -14,3 +14,5 @@ declare -A ramdisks=(
 	["usercache"]="/home/sid/.cache /mnt/persistent/home"
 ["firefoxsession"]="/home/sid/.mozilla /mnt/persistent/firefox"
 )
+lockfile=".cache.lock"
+logfile="/tmp/ramdisk_cache.log"
