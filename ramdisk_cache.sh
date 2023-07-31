@@ -40,3 +40,4 @@ for r in "${!ramdisks[@]}"; do
 			echo -e "\t$r"
 done
 		exit 1
+fi
