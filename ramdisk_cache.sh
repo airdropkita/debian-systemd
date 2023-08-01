@@ -41,3 +41,6 @@ for r in "${!ramdisks[@]}"; do
 done
 		exit 1
 fi
+}
+
+for ramdisk in $@; do
