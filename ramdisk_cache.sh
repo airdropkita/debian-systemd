@@ -54,3 +54,5 @@ echo "'$ramdisk' is not valid." >> "$logfile"
 for r in "${!ramdisks[@]}"; do
 	echo -e "\t$r"
 		done
+exit 1
+	fi
