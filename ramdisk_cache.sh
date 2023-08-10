@@ -56,3 +56,5 @@ for r in "${!ramdisks[@]}"; do
 		done
 exit 1
 	fi
+
+	manageRamdisk "$mounted" "$persistent"
