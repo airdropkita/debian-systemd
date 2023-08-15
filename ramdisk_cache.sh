@@ -19,3 +19,4 @@ logfile="/tmp/ramdisk_cache.log"
 
 function manageRamdisk { # mounted, persistent
 	mounted="$1"
+persistent="$2"
