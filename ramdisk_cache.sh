@@ -28,3 +28,4 @@ echo "$(date -Iseconds) - $mounted saved to persistent" >> "$logfile"
 	else # we put persistent content in ramdisk
 	rsync -aq "$persistent/" "$mounted/"
 		touch "$mounted"/"$lockfile"
+echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
