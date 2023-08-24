@@ -31,3 +31,5 @@ echo "$(date -Iseconds) - $mounted saved to persistent" >> "$logfile"
 echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
 fi
 }
+
+for ramdisk in $@; do
