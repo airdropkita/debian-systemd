@@ -35,3 +35,6 @@ fi
 for ramdisk in $@; do
 mounted="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 1)"
 persistent="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 2)"
+
+	# if wrong parameter, we terminate
+	if [ -z "$mounted" ] || [ -z "$persistent" ]; then
