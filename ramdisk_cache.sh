@@ -47,3 +47,4 @@ exit 1
 	fi
 
 	manageRamdisk "$mounted" "$persistent"
+done
