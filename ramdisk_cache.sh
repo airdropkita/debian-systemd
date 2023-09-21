@@ -33,3 +33,4 @@ echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
 }
 
 for ramdisk in $@; do
+mounted="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 1)"
