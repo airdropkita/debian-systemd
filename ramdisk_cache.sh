@@ -34,3 +34,6 @@ echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
 
 for ramdisk in $@; do
 mounted="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 1)"
+persistent="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 2)"
+
+	# if wrong parameter, we terminate
