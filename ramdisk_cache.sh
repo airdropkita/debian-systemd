@@ -13,3 +13,6 @@ declare -A ramdisks=(
 ["log"]="/var/log /mnt/persistent/log"
 	["usercache"]="/home/sid/.cache /mnt/persistent/home"
 ["firefoxsession"]="/home/sid/.mozilla /mnt/persistent/firefox"
+)
+lockfile=".cache.lock"
+logfile="/tmp/ramdisk_cache.log"
