@@ -41,3 +41,6 @@ if [ -z "$mounted" ] || [ -z "$persistent" ]; then
 		echo "'$ramdisk' is not valid." >> "$logfile"
 echo "'$ramdisk' is not valid. Use one of these:"
 		for r in "${!ramdisks[@]}"; do
+	echo -e "\t$r"
+		done
+		exit 1
