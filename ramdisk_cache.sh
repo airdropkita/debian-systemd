@@ -15,3 +15,6 @@ declare -A ramdisks=(
 ["firefoxsession"]="/home/sid/.mozilla /mnt/persistent/firefox"
 )
 lockfile=".cache.lock"
+logfile="/tmp/ramdisk_cache.log"
+
+function manageRamdisk { # mounted, persistent
