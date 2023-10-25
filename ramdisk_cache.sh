@@ -30,3 +30,7 @@ echo "$(date -Iseconds) - $mounted saved to persistent" >> "$logfile"
 		touch "$mounted"/"$lockfile"
 echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
 	fi
+}
+
+for ramdisk in $@; do
+	mounted="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 1)"
