@@ -43,3 +43,7 @@ echo "'$ramdisk' is not valid. Use one of these:"
 for r in "${!ramdisks[@]}"; do
 	echo -e "\t$r"
 		done
+exit 1
+	fi
+
+	manageRamdisk "$mounted" "$persistent"
