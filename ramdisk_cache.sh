@@ -17,3 +17,5 @@ declare -A ramdisks=(
 lockfile=".cache.lock"
 logfile="/tmp/ramdisk_cache.log"
 
+function manageRamdisk { # mounted, persistent
+	mounted="$1"
