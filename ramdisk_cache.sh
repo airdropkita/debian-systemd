@@ -27,3 +27,4 @@ if [ -e "$mounted"/"$lockfile" ]; then
 echo "$(date -Iseconds) - $mounted saved to persistent" >> "$logfile"
 else # we put persistent content in ramdisk
 rsync -aq "$persistent/" "$mounted/"
+touch "$mounted"/"$lockfile"
