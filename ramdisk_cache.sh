@@ -29,3 +29,8 @@ else # we put persistent content in ramdisk
 rsync -aq "$persistent/" "$mounted/"
 touch "$mounted"/"$lockfile"
 echo "$(date -Iseconds) - $mounted loaded from persistent" >> "$logfile"
+fi
+}
+
+for ramdisk in $@; do
+	mounted="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 1)"
