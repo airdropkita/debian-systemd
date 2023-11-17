@@ -39,3 +39,5 @@ persistent="$(echo ${ramdisks[$ramdisk]} | cut -sd ' ' -f 2)"
 	# if wrong parameter, we terminate
 	if [ -z "$mounted" ] || [ -z "$persistent" ]; then
 	echo "'$ramdisk' is not valid." >> "$logfile"
+echo "'$ramdisk' is not valid. Use one of these:"
+		for r in "${!ramdisks[@]}"; do
