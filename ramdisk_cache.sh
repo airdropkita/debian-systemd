@@ -17,3 +17,7 @@
 #    along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 # script used to save cache from ramdisk to persistent storage / put stuff in cache ramdisk
+
+set -efu
+
+# we create a dictionnary whose values are strings with space separated paths.
