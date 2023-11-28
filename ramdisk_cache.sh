@@ -21,3 +21,7 @@
 set -efu
 
 # we create a dictionnary whose values are strings with space separated paths.
+# the first path is the mounted ramdisk, the second path is the save folder.
+
+declare -A ramdisks=(
+#	["test"]="mounted persistent" # mkdir mounted persistent; touch persistent/test
