@@ -38,3 +38,5 @@ mounted="$1"
 	persistent="$2"
 
 	# if the lockfile exists in mounted, we save the content in persistent
+if [ -e "$mounted"/"$lockfile" ]; then
+		rsync -aqu --delete --exclude "$lockfile" "$mounted/" "$persistent/"
