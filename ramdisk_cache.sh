@@ -42,3 +42,5 @@ if [ -e "$mounted"/"$lockfile" ]; then
 		rsync -aqu --delete --exclude "$lockfile" "$mounted/" "$persistent/"
 echo "$(date -Iseconds) - $mounted saved to persistent" >> "$logfile"
 	else # we put persistent content in ramdisk
+rsync -aq "$persistent/" "$mounted/"
+		touch "$mounted"/"$lockfile"
